@@ -19,7 +19,7 @@ app.set('port', port);
 /**
  * Mongodb connection
  */
-mongoose.connect(epa.get('mongodb'),function(err){
+mongoose.connect('mongodb://localhost/demo_database',function(err){
   if(err) throw err;
   console.log('connected to MongoDB');
 })

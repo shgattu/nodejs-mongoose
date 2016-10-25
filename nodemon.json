@@ -1,0 +1,12 @@
+{
+  "verbose": true,
+  "watch" :[
+    "express",
+    "lib"
+  ],
+  "ignore": [
+    "node_modules",
+    "express/public",
+    "express/views"
+  ]
+}
