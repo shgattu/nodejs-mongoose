@@ -3,7 +3,14 @@
 
 extends layout
 block content
-    p  firstName=  author.firstName
+    h1 Author Info for:
+        = post.title
+    p  firstName:
+      =author.firstName
 
-    p  lastName= author.lastName
+    p  lastName:
+        =author.lastName
+
+    p email:
+        =author.email
 

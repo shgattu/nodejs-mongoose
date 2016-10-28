@@ -7,8 +7,8 @@ var router = new express.Router();
 router.get("/",function(req,res){
     var post = req.appData.post;
 
-    var author = post.author
-    console.log(req.params);
+    var author = post.author;
+    console.log('authoor is'+author);
     res.render("post-author",{
         post:post,
         author: author

@@ -14,6 +14,14 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+// An example for application middleware
+
+app.use(function(req,res,next){
+  res.locals.something = {
+      foo: "bar"
+};
+  next();
+})
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
